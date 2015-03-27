@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademySystem", "AcademySys
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademySystem.WpfClient", "AcademySystem.WpfClient\AcademySystem.WpfClient.csproj", "{744F8CE6-C7D8-49BA-BB18-3C46D4093882}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademySystemConsoleTest", "AcademySystemConsoleTest\AcademySystemConsoleTest.csproj", "{2E765CE4-5247-49A4-882F-B3398B77EA12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{744F8CE6-C7D8-49BA-BB18-3C46D4093882}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{744F8CE6-C7D8-49BA-BB18-3C46D4093882}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{744F8CE6-C7D8-49BA-BB18-3C46D4093882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E765CE4-5247-49A4-882F-B3398B77EA12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E765CE4-5247-49A4-882F-B3398B77EA12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E765CE4-5247-49A4-882F-B3398B77EA12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E765CE4-5247-49A4-882F-B3398B77EA12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
