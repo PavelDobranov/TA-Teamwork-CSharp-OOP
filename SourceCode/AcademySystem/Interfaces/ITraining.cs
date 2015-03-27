@@ -4,6 +4,6 @@
 
     public interface ITraining
     {
-
+        string Name { get; }
     }
 }
