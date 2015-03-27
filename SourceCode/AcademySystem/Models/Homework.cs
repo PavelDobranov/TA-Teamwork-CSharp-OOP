@@ -1,6 +1,10 @@
 ﻿namespace AcademySystem.Models
 {
-    public class Homework
+    using System;
+
+    using AcademySystem.Interfaces;
+
+    public class Homework : IHomework
     {
     }
 }
