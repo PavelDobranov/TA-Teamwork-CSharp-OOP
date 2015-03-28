@@ -7,7 +7,7 @@
 
     public class Trainer : Human, ITrainer
     {
-        private List<string> qualification;
+        private ICollection<string> qualification;
         private string description;
         private string webPage;
 
@@ -22,14 +22,22 @@
 
         public string Specialty { get; set; }
 
-        public List<string> Qualification { get; set; }
+        public ICollection<string> Qualification { get; set; }
 
         public string WebPage { get; set; }
 
 
-        public string Webpage
+        ICollection<ICourse> ListOfCourses { get; }
+
+        //methods
+        public void AddCourse(ICourse course)
         {
-            get { throw new NotImplementedException(); }
+            this.ListOfCourses.Add(course);
+        }
+
+        public void RemoveCourse(ICourse course)
+        {
+            this.ListOfCourses.Remove(course);
         }
     }
 }
