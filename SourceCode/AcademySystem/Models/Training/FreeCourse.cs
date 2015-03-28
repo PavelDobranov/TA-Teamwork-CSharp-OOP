@@ -3,7 +3,7 @@ namespace AcademySystem.Models.Training
 {
     using System;
     using AcademySystem.Interfaces;
-    using AcademySystem.Training;
+    using AcademySystem.Models;
 
     public class FreeCourse : Course
     {

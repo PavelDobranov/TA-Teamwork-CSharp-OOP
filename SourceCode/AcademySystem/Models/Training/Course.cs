@@ -1,4 +1,4 @@
-﻿namespace AcademySystem.Training
+﻿namespace AcademySystem.Models.Training
 {
     using System;
     using AcademySystem.Interfaces;

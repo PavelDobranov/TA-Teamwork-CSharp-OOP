@@ -61,6 +61,7 @@
     <Compile Include="Models\Training\FreeCourse.cs" />
     <Compile Include="Models\Training\Lecture.cs" />
     <Compile Include="Models\Training\PaydCourse.cs" />
+    <Compile Include="Models\Training\Task.cs" />
     <Compile Include="Models\Training\Training.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

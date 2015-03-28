@@ -1,4 +1,4 @@
-﻿namespace AcademySystem.Training
+﻿namespace AcademySystem.Models.Training
 {
     using System;
     using AcademySystem.Interfaces;
@@ -19,7 +19,7 @@
             get;
             set;
         }
-        wd
+        
         public DateTime EndTime
         {
             get;

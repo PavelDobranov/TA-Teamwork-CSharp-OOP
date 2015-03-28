@@ -3,7 +3,7 @@
     using System;
     using System.Collections.Generic;
     
-    using AcademySystem.Training;
+    using AcademySystem.Models;
     using AcademySystem.Interfaces;
 
     public class Student : Human, IStudent

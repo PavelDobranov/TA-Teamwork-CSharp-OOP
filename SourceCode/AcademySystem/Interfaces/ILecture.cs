@@ -7,5 +7,6 @@
         DateTime StartTime { get; }
         DateTime EndTime { get; }
         ITrainer Trainer { get; }
+        IHomework Homework { get; }
     }
 }

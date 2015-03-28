@@ -2,7 +2,7 @@
 namespace AcademySystem.Models.Training
 {
     using System;
-    using AcademySystem.Training;
+    using AcademySystem.Models;
     using AcademySystem.Interfaces;
 
     public class PaydCourse : Course , IPayd

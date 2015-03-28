@@ -8,8 +8,8 @@
     
     using AcademySystem.Humans;
     using AcademySystem.Interfaces;
+    using AcademySystem.Models.Training;
     using AcademySystem.Models;
-    using AcademySystem.Training;
 
     public class AcademySystemConsoleTestClass
     {
@@ -23,7 +23,7 @@
                                                 Gender.Male,"Programing","www.fff.bg");
             Lecture someLecture = new Lecture("LectName", "Programing",
                 new DateTime(2015, 03, 04, 12, 00, 00),
-                new DateTime(2015, 03, 04, 18, 00, 00),someTrainer);
+                new DateTime(2015, 03, 04, 18, 00, 00),someTrainer,new Homework());
 
             somExercise.AddTrainer(someTrainer);
 
