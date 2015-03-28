@@ -12,7 +12,7 @@
         private ICollection<ICourse> courses;
 
         public Student(string firstName, string lastName, int age, string username, string email, string city,
-                       Gender gender, int fn, ICollection<ICourse> courses)
+                       Gender gender, int fn)
             : base(firstName, lastName, age, username, email, city, gender)
         {
             this.FacultyNumber = fn;
@@ -21,7 +21,7 @@
 
         public int FacultyNumber { get; set; }
 
-        ICollection<ICourse> ListOfCourses { get; set; }
+        public ICollection<ICourse> ListOfCourses { get; set; }
 
         public void AddCourse(ICourse course)
         {

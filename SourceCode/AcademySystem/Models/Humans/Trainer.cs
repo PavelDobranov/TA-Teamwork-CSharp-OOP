@@ -17,17 +17,17 @@
             : base(firstName, lastName, age, username, email, city, gender)
         {
             this.Specialty = specialty;
-            this.WebPage = webPage;
+            this.Webpage = webPage;
         }
 
         public string Specialty { get; set; }
 
         public ICollection<string> Qualification { get; set; }
 
-        public string WebPage { get; set; }
+        public string Webpage { get; set; }
 
 
-        ICollection<ICourse> ListOfCourses { get; }
+        public ICollection<ICourse> ListOfCourses { get; set; }
 
         //methods
         public void AddCourse(ICourse course)

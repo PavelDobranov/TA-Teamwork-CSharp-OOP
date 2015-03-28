@@ -4,7 +4,7 @@
     using AcademySystem.Interfaces;
 
 
-    class Lecture : Training, ILecture
+    public class Lecture : Training, ILecture
     {
         public Lecture(string name, string category, DateTime startTime, DateTime endTime, ITrainer trainer)
             : base(name, category)
