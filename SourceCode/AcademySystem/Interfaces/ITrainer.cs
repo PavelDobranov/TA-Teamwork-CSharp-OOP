@@ -8,7 +8,7 @@
 
         string Webpage { get; }
 
-        ICollection<ICourse> listOfCourses { get; }
+        ICollection<ICourse> ListOfCourses { get; }
 
         //methods
         void AddCourse(ICourse course);
