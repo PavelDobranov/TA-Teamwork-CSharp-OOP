@@ -5,5 +5,8 @@
     public interface ITraining
     {
         string Name { get; }
+
+        string Category { get; }
+      
     }
 }

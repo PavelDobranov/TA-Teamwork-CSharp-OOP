@@ -4,7 +4,7 @@ namespace AcademySystem.Interfaces
     using System;
     using System.Collections.Generic;
 
-    interface IExercise : ITraining
+    interface IExercise : IPayd
     {
         DateTime StartTime { get; }
         DateTime EndTime { get; }

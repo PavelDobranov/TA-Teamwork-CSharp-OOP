@@ -1,29 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="AcademySystem.ErrorMessage" Collapsed="true">
-    <Position X="12" Y="0.5" Width="1.5" />
+    <Position X="12.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Common\ErrorMessage.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AcademySystem.Models.Homework" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="10.25" Y="1.5" Width="1.5" />
+    <Position X="10.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Homework.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="AcademySystem.Humans.Assistent" Collapsed="true">
-    <Position X="10.25" Y="0.5" Width="1.5" />
+    <Position X="10.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Humans\Assistent.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AcademySystem.Humans.Human" Collapsed="true">
-    <Position X="1.75" Y="6.5" Width="1.5" />
+    <Position X="6.75" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAEAAACBAQACoAUAACAEAAAAAAAAAAAAACAAAAAg=</HashCode>
       <FileName>Models\Humans\Human.cs</FileName>
@@ -31,7 +31,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="AcademySystem.Humans.Student" Collapsed="true">
-    <Position X="2.75" Y="7.75" Width="1.5" />
+    <Position X="7.75" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAEAAAABAAAAA=</HashCode>
       <FileName>Models\Humans\Student.cs</FileName>
@@ -39,7 +39,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="AcademySystem.Humans.Trainer" Collapsed="true">
-    <Position X="0.5" Y="7.75" Width="1.5" />
+    <Position X="5.5" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABAAAAAQAAAAAAAIAAAAAAAEAACABAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Humans\Trainer.cs</FileName>
@@ -47,7 +47,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="AcademySystem.Training.Course" Collapsed="true">
-    <Position X="0.75" Y="1.75" Width="1.5" />
+    <Position X="3.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Training\Course.cs</FileName>
@@ -55,7 +55,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="AcademySystem.Training.Exercise" Collapsed="true">
-    <Position X="3" Y="1.75" Width="1.5" />
+    <Position X="6" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Training\Exercise.cs</FileName>
@@ -63,7 +63,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="AcademySystem.Training.Lecture" Collapsed="true">
-    <Position X="5.25" Y="1.75" Width="1.5" />
+    <Position X="8.25" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Training\Lecture.cs</FileName>
@@ -71,7 +71,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="AcademySystem.Training.Training" Collapsed="true">
-    <Position X="3" Y="0.5" Width="1.5" />
+    <Position X="6" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Training\Training.cs</FileName>
@@ -79,70 +79,77 @@
     <Lollipop Position="0.2" />
   </Class>
   <Struct Name="AcademySystem.Models.Mark" Collapsed="true">
-    <Position X="10.25" Y="2.75" Width="1.5" />
+    <Position X="10.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Mark.cs</FileName>
     </TypeIdentifier>
   </Struct>
   <Interface Name="AcademySystem.Interfaces.ICourse" Collapsed="true">
-    <Position X="5.25" Y="4.75" Width="1.5" />
+    <Position X="5.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>IAAAAAAAAAAgAAAAAAAAAAAgAAAAAAQAAAAAAEAAAAA=</HashCode>
       <FileName>Interfaces\ICourse.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="AcademySystem.Interfaces.IExercise" Collapsed="true">
-    <Position X="3" Y="4.75" Width="1.5" />
+    <Position X="3" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAIAAgAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IExercise.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="AcademySystem.Interfaces.IHomework" Collapsed="true">
-    <Position X="10.25" Y="4" Width="1.5" />
+    <Position X="10.75" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IHomework.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="AcademySystem.Interfaces.IHuman" Collapsed="true">
-    <Position X="6.75" Y="6.5" Width="1.5" />
+    <Position X="1.75" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAEAAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Interfaces\IHuman.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="AcademySystem.Interfaces.ILecture" Collapsed="true">
-    <Position X="0.75" Y="4.75" Width="1.5" />
+    <Position X="0.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIACgAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\ILecture.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="AcademySystem.Interfaces.IStudent" Collapsed="true">
-    <Position X="7.75" Y="7.75" Width="1.5" />
+    <Position X="2.75" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IStudent.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="AcademySystem.Interfaces.ITrainer" Collapsed="true">
-    <Position X="5.5" Y="7.75" Width="1.5" />
+    <Position X="0.5" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAACAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\ITrainer.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="AcademySystem.Interfaces.ITraining" Collapsed="true">
-    <Position X="3" Y="3.5" Width="1.5" />
+    <Position X="3" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>Interfaces\ITraining.cs</FileName>
     </TypeIdentifier>
   </Interface>
+  <Interface Name="AcademySystem.Interfaces.IPayd" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPayd.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Enum Name="AcademySystem.Humans.Gender" Collapsed="true">
-    <Position X="10.25" Y="5" Width="1.5" />
+    <Position X="10.75" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
       <FileName>Models\Humans\Gender.cs</FileName>
