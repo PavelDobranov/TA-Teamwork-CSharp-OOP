@@ -19,7 +19,7 @@
             get;
             set;
         }
-
+        wd
         public DateTime EndTime
         {
             get;
