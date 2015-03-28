@@ -25,5 +25,11 @@
         public List<string> Qualification { get; set; }
 
         public string WebPage { get; set; }
+
+
+        public string Webpage
+        {
+            get { throw new NotImplementedException(); }
+        }
     }
 }

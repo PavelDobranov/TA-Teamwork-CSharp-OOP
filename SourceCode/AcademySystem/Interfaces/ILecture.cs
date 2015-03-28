@@ -2,7 +2,7 @@
 {
     using System;
 
-    public interface ILecture : IPayd
+    public interface ILecture : ITraining
     {
         DateTime StartTime { get; }
         DateTime EndTime { get; }

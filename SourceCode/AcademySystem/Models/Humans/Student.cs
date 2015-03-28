@@ -22,5 +22,10 @@
          public int FN { get; set; }
 
          public List<Course> Courses { get; set; }
+
+         public int FacultyNumber
+         {
+             get { throw new NotImplementedException(); }
+         }
     }
 }

@@ -58,7 +58,9 @@
     <Compile Include="Models\Mark.cs" />
     <Compile Include="Models\Training\Course.cs" />
     <Compile Include="Models\Training\Exercise.cs" />
+    <Compile Include="Models\Training\FreeCourse.cs" />
     <Compile Include="Models\Training\Lecture.cs" />
+    <Compile Include="Models\Training\PaydCourse.cs" />
     <Compile Include="Models\Training\Training.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
