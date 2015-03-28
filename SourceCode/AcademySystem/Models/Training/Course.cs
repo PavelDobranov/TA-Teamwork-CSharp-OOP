@@ -7,6 +7,17 @@
 
     public class Course : Training, ICourse
     {
+        public Course(string name, string category, DateTime startDate, DateTime endDate, string description, decimal price = 0)
+            : base(name, category)
+        {
+            this.StartDate = startDate;
+            this.EndDate = endDate;
+            this.Description = description;
+            this.Exercises = new List<IExercise>();
+            this.Lectures = new List<ILecture>();
+            this.Price = price;
+        }
+
         public List<IExercise> Exercises { get; private set; }
 
         public List<ILecture> Lectures { get; private set; }

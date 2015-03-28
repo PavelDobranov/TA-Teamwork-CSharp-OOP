@@ -6,25 +6,30 @@
 
     class Lecture : Training, ILecture
     {
+        public Lecture(string name, string category, DateTime startTime, DateTime endTime, ITrainer trainer)
+            : base(name, category)
+        {
+            this.StartTime = startTime;
+            this.EndTime = endTime;
+            this.Trainer = trainer;
+        }
 
         public DateTime StartTime
         {
-            get { throw new NotImplementedException(); }
+            get;
+            set;
         }
 
         public DateTime EndTime
         {
-            get { throw new NotImplementedException(); }
+            get;
+            set;
         }
 
         public ITrainer Trainer
         {
-            get { throw new NotImplementedException(); }
-        }
-
-        public decimal Price
-        {
-            get { throw new NotImplementedException(); }
+            get;
+            set;
         }
     }
 }

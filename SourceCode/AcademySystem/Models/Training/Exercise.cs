@@ -2,24 +2,39 @@
 {
     using System;
     using AcademySystem.Interfaces;
-
+    using System.Collections.Generic;
 
     public class Exercise : Training, IExercise 
     {
+        public Exercise(string name, string category, DateTime startTime, DateTime endTime)
+            :base(name, category)
+        {
+            this.StartTime = startTime;
+            this.EndTime = endTime;
+            this.Trainers = new List<ITrainer>();
+        }
 
         public DateTime StartTime
         {
-            get { throw new NotImplementedException(); }
+            get;
+            set;
         }
 
         public DateTime EndTime
         {
-            get { throw new NotImplementedException(); }
+            get;
+            set;
         }
 
-        public System.Collections.Generic.List<ITrainer> Trainers
+        public List<ITrainer> Trainers
         {
-            get { throw new NotImplementedException(); }
+            get;
+            private set;
+        }
+
+        public void AddTrainer(ITrainer trainer)
+        {
+            this.Trainers.Add(trainer);
         }
     }
 }

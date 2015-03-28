@@ -3,8 +3,13 @@
     using System;
     using AcademySystem.Interfaces;
 
-    public abstract class Training : ITraining 
+    public abstract class Training : ITraining
     {
+        public Training(string name, string category)
+        {
+            this.Name = name;
+            this.Category = category;
+        }
 
         public string Name
         {
