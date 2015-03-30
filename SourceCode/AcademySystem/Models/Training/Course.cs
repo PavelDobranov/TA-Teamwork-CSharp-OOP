@@ -5,9 +5,9 @@
     using System.Collections.Generic;
     using AcademySystem.Models.Training;
 
-    public class Course : Training, ICourse
+    public abstract class Course : Training, ICourse
     {
-        public Course(string name, string category, DateTime startDate, DateTime endDate, string description, decimal price = 0)
+        public Course(string name, string category, DateTime startDate, DateTime endDate, string description)
             : base(name, category)
         {
             this.StartDate = startDate;
@@ -15,7 +15,6 @@
             this.Description = description;
             this.Exercises = new List<IExercise>();
             this.Lectures = new List<ILecture>();
-            this.Price = price;
         }
 
         public List<IExercise> Exercises { get; private set; }
@@ -48,12 +47,6 @@
         public void AddExercise(IExercise exerciseToAdd)
         {
             this.Exercises.Add(exerciseToAdd);
-        }
-
-        public decimal Price
-        {
-            get;
-            private set;
         }
     }
 }

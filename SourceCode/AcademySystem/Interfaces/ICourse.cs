@@ -2,7 +2,7 @@
 {
     using System;
 
-    public interface ICourse : IPayd
+    public interface ICourse : ITraining
     {
         string Description { get; }
         DateTime StartDate { get; }

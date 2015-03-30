@@ -1,7 +1,7 @@
 ﻿
 namespace AcademySystem.Interfaces
 {
-    public interface IPayd : ITraining
+    public interface IPayd
     {
          decimal Price { get; }
     }

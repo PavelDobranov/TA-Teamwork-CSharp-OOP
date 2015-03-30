@@ -7,13 +7,15 @@ namespace AcademySystem.Models.Training
 
     public class PaydCourse : Course , IPayd
     {
-        public string Certificate { get;  private set; }
 
-        
         public PaydCourse(string name, string category, DateTime start, DateTime end, string description, decimal price)
-            : base(name, category, start, end, description, price)
+            : base(name, category, start, end, description)
         {
- 
+            this.Price = price;
         }
+
+        public decimal Price { get; private set; }      
+        
+        public string Certificate { get; set; }   
     }
 }

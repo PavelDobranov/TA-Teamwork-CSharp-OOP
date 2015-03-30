@@ -33,7 +33,6 @@
             set;
         }
 
-
         public IHomework Homework
         {
             get;
