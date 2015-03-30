@@ -39,13 +39,33 @@
             private set;
         }
 
+        public Mark Mark 
+        { 
+            get; 
+            set; 
+        }
+
         public void AddLecture(ILecture lectureToAdd)
         {
+            if (lectureToAdd == null)
+            {
+                throw new ArgumentNullException(
+                    string.Format(
+                        ErrorMessage.NullObjectMessage, lectureToAdd.GetType().Name));    
+            }
+
             this.Lectures.Add(lectureToAdd);
         }
 
         public void AddExercise(IExercise exerciseToAdd)
         {
+            if (exerciseToAdd == null)
+            {
+                throw new ArgumentNullException(
+                    string.Format(
+                        ErrorMessage.NullObjectMessage, exerciseToAdd.GetType().Name));
+            }
+
             this.Exercises.Add(exerciseToAdd);
         }
     }

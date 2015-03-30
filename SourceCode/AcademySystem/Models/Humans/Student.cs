@@ -8,8 +8,8 @@
 
     public class Student : Human, IStudent
     {
-        private int facultyNumber;
-        private ICollection<ICourse> courses;
+        //private int facultyNumber;
+        //private ICollection<ICourse> courses;
 
         public Student(string firstName, string lastName, int age, string username, string email, string city,
                        Gender gender, int fn)
@@ -25,11 +25,25 @@
 
         public void AddCourse(ICourse course)
         {
+            if (course == null)
+            {
+                throw new ArgumentNullException(
+                    string.Format(
+                        ErrorMessage.NullObjectMessage, course.GetType().Name));
+            }
+
             this.ListOfCourses.Add(course);
         }
 
         public void RemoveCourse(ICourse course)
         {
+            if (course == null)
+            {
+                throw new ArgumentNullException(
+                    string.Format(
+                        ErrorMessage.NullObjectMessage, course.GetType().Name));
+            }
+
             this.ListOfCourses.Remove(course);
         }
     }

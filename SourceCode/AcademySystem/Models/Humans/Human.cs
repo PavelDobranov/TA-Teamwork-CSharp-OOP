@@ -6,6 +6,9 @@
 
     public abstract class Human : IHuman
     {
+        private static readonly int minAge = 0;
+        private static readonly int maxAge = 150;
+
         private string firstName;
         private string lastName;
         private int age;
@@ -22,6 +25,7 @@
             this.Email = email;
             this.Gender = gender;
         }
+
         public string FirstName
         {
             get
@@ -30,10 +34,18 @@
             }
             private set
             {
-                //Exception
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentNullException(
+                        string.Format(
+                            ErrorMessage.NullOrEmptyPropertyMessage, 
+                            typeof(Human).GetProperty("FirstName").Name));
+                }
+
                 this.firstName = value;
             }
         }
+
         public string LastName
         {
             get
@@ -42,7 +54,14 @@
             }
             private set
             {
-                //Exception
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentNullException(
+                        string.Format(
+                            ErrorMessage.NullOrEmptyPropertyMessage,
+                            typeof(Human).GetProperty("LastName").Name));
+                }
+
                 this.lastName = value;
             }
         }
@@ -55,10 +74,18 @@
             }
             private set
             {
-                //Exception
+                if (this.age < minAge || this.age > maxAge)
+                {
+                    throw new ArgumentNullException(
+                        string.Format(
+                            ErrorMessage.OutOfRangeMessage,
+                            minAge, maxAge));
+                }
+
                 this.age = value;
             }
         }
+
         public string Username
         {
             get
@@ -67,10 +94,18 @@
             }
             private set
             {
-                //Exception
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentNullException(
+                        string.Format(
+                            ErrorMessage.NullOrEmptyPropertyMessage,
+                            typeof(Human).GetProperty("UserName").Name));
+                }
+
                 this.username = value;
             }
         }
+
         public string Email
         {
             get
@@ -79,7 +114,14 @@
             }
             private set
             {
-                //Exception
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentNullException(
+                        string.Format(
+                            ErrorMessage.NullOrEmptyPropertyMessage,
+                            typeof(Human).GetProperty("Email").Name));
+                }
+
                 this.email = value;
             }
         }
@@ -92,7 +134,14 @@
             }
             private set
             {
-                //Exception
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentNullException(
+                        string.Format(
+                            ErrorMessage.NullOrEmptyPropertyMessage,
+                            typeof(Human).GetProperty("City").Name));
+                }
+
                 this.city = value;
             }
         }
