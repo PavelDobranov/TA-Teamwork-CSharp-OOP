@@ -7,6 +7,9 @@
         string Name { get; }
 
         string Category { get; }
-      
+
+        DateTime StartDateTime { get; }
+
+        DateTime EndDateTime { get; }
     }
 }

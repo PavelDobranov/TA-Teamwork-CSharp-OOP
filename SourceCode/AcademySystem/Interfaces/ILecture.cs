@@ -2,10 +2,8 @@
 {
     using System;
 
-    public interface ILecture : ITraining
+    public interface ILecture
     {
-        DateTime StartTime { get; }
-        DateTime EndTime { get; }
         ITrainer Trainer { get; }
         IHomework Homework { get; }
     }

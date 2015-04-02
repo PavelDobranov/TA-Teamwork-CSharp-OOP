@@ -4,10 +4,8 @@ namespace AcademySystem.Interfaces
     using System;
     using System.Collections.Generic;
 
-    public interface IExercise : ITraining
+    public interface IExercise
     {
-        DateTime StartTime { get; }
-        DateTime EndTime { get; }
         List<ITrainer> Trainers { get; }
     }
 }

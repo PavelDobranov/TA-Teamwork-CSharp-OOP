@@ -4,26 +4,12 @@
     using AcademySystem.Interfaces;
     using System.Collections.Generic;
 
-    public class Exercise : Training, IExercise 
+    public class Exercise : TrainingClass, IExercise
     {
         public Exercise(string name, string category, DateTime startTime, DateTime endTime)
-            :base(name, category)
+            : base(name, category, startTime, endTime)
         {
-            this.StartTime = startTime;
-            this.EndTime = endTime;
             this.Trainers = new List<ITrainer>();
-        }
-
-        public DateTime StartTime
-        {
-            get;
-            set;
-        }
-        
-        public DateTime EndTime
-        {
-            get;
-            set;
         }
 
         public List<ITrainer> Trainers
@@ -38,7 +24,7 @@
             {
                 throw new ArgumentNullException(
                     string.Format(
-                        ErrorMessage.NullObjectMessage, trainer.GetType().Name));    
+                        ErrorMessage.NullObjectMessage, trainer.GetType().Name));
             }
 
             this.Trainers.Add(trainer);

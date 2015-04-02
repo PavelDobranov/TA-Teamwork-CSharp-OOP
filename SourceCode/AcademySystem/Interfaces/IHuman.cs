@@ -2,7 +2,7 @@
 {
     using System;
 
-    public interface IHuman
+    public interface IUser
     {
         string FirstName { get; }
         string LastName { get; }

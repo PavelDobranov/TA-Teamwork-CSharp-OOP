@@ -5,11 +5,9 @@
 
     using AcademySystem.Interfaces;
 
-    public class Trainer : Human, ITrainer
+    public class Trainer : User, ITrainer
     {
-        //private ICollection<string> qualification;
-        //private string description;
-        //private string webPage;
+        // TO DELETE
 
         public Trainer(string firstName, string lastName, int age, string username, string email,
                     string city, Gender gender, string specialty, string webpage)

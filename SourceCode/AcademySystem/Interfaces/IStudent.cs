@@ -1,7 +1,7 @@
 ﻿namespace AcademySystem.Interfaces
 {
     using System.Collections.Generic;
-    public interface IStudent : IHuman
+    public interface IStudent : IUser
     {
         //properties
         int FacultyNumber { get; }

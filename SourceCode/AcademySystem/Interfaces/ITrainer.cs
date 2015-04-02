@@ -1,7 +1,7 @@
 ﻿namespace AcademySystem.Interfaces
 {
     using System.Collections.Generic;
-    public interface ITrainer : IHuman
+    public interface ITrainer : IUser
     {
         //properties
         string Specialty { get; }

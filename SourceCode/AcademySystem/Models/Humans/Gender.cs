@@ -7,6 +7,5 @@ namespace AcademySystem.Humans
     {
         Male,
         Female,
-        Other
     }
 }

@@ -6,10 +6,9 @@
     using AcademySystem.Models;
     using AcademySystem.Interfaces;
 
-    public class Student : Human, IStudent
+    public class Student : User, IStudent
     {
-        //private int facultyNumber;
-        //private ICollection<ICourse> courses;
+        // TO DELETE
 
         public Student(string firstName, string lastName, int age, string username, string email, string city,
                        Gender gender, int fn)

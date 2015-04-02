@@ -4,27 +4,13 @@
     using AcademySystem.Interfaces;
 
 
-    public class Lecture : Training, ILecture
+    public class Lecture : TrainingClass, ILecture
     {
         public Lecture(string name, string category, DateTime startTime, DateTime endTime, ITrainer trainer, IHomework homework)
-            : base(name, category)
+            : base(name, category, startTime, endTime)
         {
-            this.StartTime = startTime;
-            this.EndTime = endTime;
             this.Trainer = trainer;
             this.Homework = homework;
-        }
-
-        public DateTime StartTime
-        {
-            get;
-            set;
-        }
-
-        public DateTime EndTime
-        {
-            get;
-            set;
         }
 
         public ITrainer Trainer

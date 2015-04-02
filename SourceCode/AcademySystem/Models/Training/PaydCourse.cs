@@ -5,7 +5,7 @@ namespace AcademySystem.Models.Training
     using AcademySystem.Models;
     using AcademySystem.Interfaces;
 
-    public class PaydCourse : Course , IPayd
+    public class PaydCourse : TrainingCourse , IPayd
     {
 
         public PaydCourse(string name, string category, DateTime start, DateTime end, string description, decimal price)
