@@ -9,17 +9,47 @@
     {
         private const int MaxTrainingDuration = 500;
 
+        private ICollection<IExercise> exercises;
+        private ICollection<ILecture> lectures;
+
         public TrainingCourse(string name, string category, DateTime startDate, DateTime endDate, string description)
             : base(name, category, startDate, endDate, MaxTrainingDuration)
         {
             this.Description = description;
-            this.Exercises = new List<IExercise>();
-            this.Lectures = new List<ILecture>();
+
+            this.exercises = new List<IExercise>();
+            this.lectures = new List<ILecture>();
         }
 
-        public List<IExercise> Exercises { get; private set; }
+        public ICollection<IExercise> Exercises 
+        {
+            get
+            {
+                List<IExercise> deepCopy = new List<IExercise>();
 
-        public List<ILecture> Lectures { get; private set; }
+                foreach (var item in this.exercises)
+                {
+                    deepCopy.Add(item);
+                }
+
+                return deepCopy;
+            }
+        }
+
+        public ICollection<ILecture> Lectures
+        {
+            get
+            {
+                List<ILecture> deepCopy = new List<ILecture>();
+
+                foreach (var item in this.lectures)
+                {
+                    deepCopy.Add(item);
+                }
+
+                return deepCopy;
+            }
+        }
 
         public string Description
         {
@@ -41,7 +71,7 @@
                     string.Format(
                         ErrorMessage.NullObjectMessage, lectureToAdd.GetType().Name));
             }
-
+            //TODO Deep copy
             this.Lectures.Add(lectureToAdd);
         }
 
@@ -53,7 +83,7 @@
                     string.Format(
                         ErrorMessage.NullObjectMessage, exerciseToAdd.GetType().Name));
             }
-
+            //TODO Deep Copy
             this.Exercises.Add(exerciseToAdd);
         }
     }

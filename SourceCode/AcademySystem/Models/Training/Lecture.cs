@@ -6,6 +6,9 @@
 
     public class Lecture : TrainingClass, ILecture
     {
+        private ITrainer trainer;
+        private IHomework homework;
+
         public Lecture(string name, string category, DateTime startTime, DateTime endTime, ITrainer trainer, IHomework homework)
             : base(name, category, startTime, endTime)
         {
@@ -15,14 +18,40 @@
 
         public ITrainer Trainer
         {
-            get;
-            set;
+            get
+            {
+                return this.trainer;
+            }
+            private set
+            {
+                if (value == null)
+                {
+                    throw new ArgumentException(
+                        string.Format(
+                            ErrorMessage.NullObjectMessage, value.GetType().Name));
+                }
+
+                this.trainer = value;
+            }
         }
 
         public IHomework Homework
         {
-            get;
-            set;
+            get
+            {
+                return this.homework;
+            }
+            private set
+            {
+                if (value == null)
+                {
+                    throw new ArgumentException(
+                        string.Format(
+                            ErrorMessage.NullObjectMessage, value.GetType().Name));
+                }
+
+                this.homework = value;
+            }
         }
     }
 }

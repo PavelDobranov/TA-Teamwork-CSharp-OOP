@@ -8,5 +8,6 @@
         public static readonly string NullOrEmptyPropertyMessage = "Property {0} must have value";
         public static readonly string NullObjectMessage = "Object {0} must have value";
         public static readonly string InvalidDurationMessage = "Invalid time range. {0} must be smaller than {1}";
+        public static readonly string InvalidPriceMessage = "Value {0} must be positive";
     }
 }

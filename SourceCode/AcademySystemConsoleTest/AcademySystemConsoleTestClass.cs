@@ -23,12 +23,12 @@
                                                 Gender.Male,"Programing","www.fff.bg");
             Lecture someLecture = new Lecture("LectName", "Programing",
                 new DateTime(2015, 03, 04, 12, 00, 00),
-                new DateTime(2015, 03, 04, 18, 00, 00),someTrainer,new Homework());
+                new DateTime(2015, 03, 04, 18, 00, 00), someTrainer, new Homework(new DateTime(2015, 04, 04, 18, 00, 00)));
 
             somExercise.AddTrainer(someTrainer);
 
             Student someSt = new Student("Goshko", "Gegov", 18, "mamamiq", "email", "Sofeto", Gender.Male, 121211221);
-            Course someCourse = new Course("C#1", "Programing", new DateTime(2015, 03, 03),
+            FreeCourse someCourse = new FreeCourse("C#1", "Programing", new DateTime(2015, 03, 03),
                                    new DateTime(2015, 03, 23), "Description");
             someCourse.AddExercise(somExercise);
             someCourse.AddLecture(someLecture);
