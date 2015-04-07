@@ -55,7 +55,11 @@
     </ApplicationDefinition>
     <Compile Include="Behavior\RelayCommand.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\UserLoginFormViewModel.cs" />
     <Compile Include="ViewModels\UserRegisterFormViewModel.cs" />
+    <Compile Include="Views\UserLoginFormView.xaml.cs">
+      <DependentUpon>UserLoginFormView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserRegisterFormView.xaml.cs">
       <DependentUpon>UserRegisterFormView.xaml</DependentUpon>
     </Compile>
@@ -67,6 +71,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\UserLoginFormView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\UserRegisterFormView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

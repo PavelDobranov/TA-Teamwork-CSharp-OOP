@@ -15,6 +15,7 @@
             <RowDefinition />
             <RowDefinition />
             <RowDefinition />
+            <RowDefinition />
             <!--<RowDefinition />-->
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -30,8 +31,11 @@
 
         <TextBlock Grid.Row="2" Grid.Column="0">Password</TextBlock>
         <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Password}" />
+        
+        <TextBlock Grid.Row="3" Grid.Column="0">Retype Password</TextBlock>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding RePassword}" />
 
-        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Content="Register" Command="{Binding Register}" />
+        <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Content="Register" Command="{Binding Register}" />
 
         <!--<TextBox Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding Msg}" />-->
     </Grid>
