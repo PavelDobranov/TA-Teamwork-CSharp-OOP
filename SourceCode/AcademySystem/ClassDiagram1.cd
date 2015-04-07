@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AcademySystem.Models.Homework" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABCAAAAAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Models\Homework.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AcademySystem.Models.User">
+    <Position X="12.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAQACAAAAAAAAAAACAAAAAAQAAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AcademySystem.Models.Humans.Contracts.Human">
+    <Position X="4.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAABAQACJAEAACAEAAAAAAAAAAAAACAAAAAg=</HashCode>
+      <FileName>Models\Humans\Contracts\Human.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AcademySystem.Models.Humans.Student">
+    <Position X="3" Y="21.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAIAAAABAAAAAAAAAAAEAAAABAAAAA=</HashCode>
+      <FileName>Models\Humans\Student.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AcademySystem.Models.Humans.Trainer">
+    <Position X="5.25" Y="21.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAgAUAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Humans\Trainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AcademySystem.Models.Training.Exercise">
+    <Position X="3.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAQAAAAEAAAAAAAAAgAAAAIAAAAABA=</HashCode>
+      <FileName>Models\Training\Exercise.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AcademySystem.Models.Training.Lecture">
+    <Position X="5.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAAQAAAAE=</HashCode>
+      <FileName>Models\Training\Lecture.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AcademySystem.Models.Training.PaydCourse">
+    <Position X="8.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Models\Training\PaydCourse.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AcademySystem.Models.Training.Task" Collapsed="true">
+    <Position X="16.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Training\Task.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AcademySystem.Models.Training.Training">
+    <Position X="6.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAEAAAAAAAABQAAAAEAAAAAAAIAAAQCAA=</HashCode>
+      <FileName>Models\Training\Training.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AcademySystem.Models.Training.TrainingClass">
+    <Position X="4.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Training\TrainingClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AcademySystem.Models.Training.FreeCourse">
+    <Position X="8.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgACAAAAAiAAAAAQAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Training\TrainingCourse.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Struct Name="AcademySystem.Models.Mark" Collapsed="true">
+    <Position X="14.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAQAAEAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\Mark.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="AcademySystem.Models.Humans.Contracts.IHuman" Collapsed="true">
+    <Position X="11.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAACAAEAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Models\Humans\Contracts\IHuman.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AcademySystem.Models.Humans.Contracts.IStudent" Collapsed="true">
+    <Position X="10" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAIAAAABAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Models\Humans\Contracts\IStudent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AcademySystem.Models.Humans.Contracts.ITrainer" Collapsed="true">
+    <Position X="12.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAgAUAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Humans\Contracts\ITrainer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AcademySystem.Models.Training.Contracts.ICourse" Collapsed="true">
+    <Position X="3" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Training\Contracts\ICourse.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AcademySystem.Models.Training.Contracts.IExercise" Collapsed="true">
+    <Position X="14.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Training\Contracts\IExercise.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AcademySystem.Models.Training.Contracts.ILecture" Collapsed="true">
+    <Position X="16.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Models\Training\Contracts\ILecture.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AcademySystem.Models.Training.Contracts.IPayd" Collapsed="true">
+    <Position X="14.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Training\Contracts\IPayd.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AcademySystem.Models.Training.Contracts.ITraining" Collapsed="true">
+    <Position X="3" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAEAAAAAAAAAQAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Models\Training\Contracts\ITraining.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="AcademySystem.Models.Humans.Gender" Collapsed="true">
+    <Position X="14.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Models\Humans\Gender.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
