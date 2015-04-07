@@ -11,32 +11,6 @@
     {
         private ICommand subscribeCommand;
 
-        public ICourse Course { get; set; }
-
-        public DateTime Date
-        {
-            get
-            {
-                return Course.StartDateTime.Date;
-            }
-        }
-
-        public TimeSpan StartTime
-        {
-            get
-            {
-                return Course.StartDateTime.TimeOfDay;
-            }
-        }
-
-        public TimeSpan EndTime
-        {
-            get
-            {
-                return Course.EndDateTime.TimeOfDay;
-            }
-        }
-
         public ICommand Subscribe
         {
             get

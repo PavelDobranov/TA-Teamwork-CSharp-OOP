@@ -25,15 +25,15 @@ namespace AcademySystem.WpfClient.Views
         {
             InitializeComponent();
 
-            //List<Training> TestCourcesList = new List<TrainingCou>();
-            //TestCourcesList.Add(new FreeCourse("Name1", "Cat1", DateTime.Now, DateTime.Now.AddDays(1)));
-            ////TestCourcesList.Add(new FreeCourse("Name2", "Cat1133", DateTime.Now, DateTime.Now.AddDays(1), "desc"));
-            ////TestCourcesList.Add(new FreeCourse("Name3", "Cat23", DateTime.Now, DateTime.Now.AddDays(1), "descdescdescdescdesc"));
-            ////TestCourcesList.Add(new FreeCourse("Name4", "Cat123", DateTime.Now, DateTime.Now.AddDays(1), "descdescdescdescdescdescdescdescdescdesc"));
+            List<TrainingClass> TestCourcesList = new List<TrainingClass>();
+            TestCourcesList.Add(new Exercise("Name1", "Cat1", DateTime.Now, DateTime.Now.AddHours(4)));
+            TestCourcesList.Add(new Exercise("Name2", "Cat2", DateTime.Now, DateTime.Now.AddHours(4)));
+            TestCourcesList.Add(new Exercise("Name3", "Cat3", DateTime.Now, DateTime.Now.AddHours(4)));
+            TestCourcesList.Add(new Exercise("Name4", "Cat4", DateTime.Now, DateTime.Now.AddHours(4)));
 
 
-            //TestCourcesList.AddRange(TestCourcesList);
-            //TrainingClasses.ItemsSource = TestCourcesList;
+            TestCourcesList.AddRange(TestCourcesList);
+            TrainingClasses.ItemsSource = TestCourcesList;
                        
         }
     }
