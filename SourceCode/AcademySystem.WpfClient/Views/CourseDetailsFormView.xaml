@@ -30,12 +30,16 @@
         <TextBlock Grid.Row="3" Grid.Column="0" Text="Start Date:" />
         <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding FreeCourse.StartDateTime}" />
         <TextBlock Grid.Row="3" Grid.Column="2" Text="End Date: " />
-        <TextBlock Grid.Row="3" Grid.Column="3" Text="{Binding FreeCourse.EndDateTime}" /> 
+        <TextBlock Grid.Row="3" Grid.Column="3" Text="{Binding FreeCourse.EndDateTime}" />
 
-        <ListView Name="List" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4">
+        <ListView Name="TrainingClasses" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Training classes"/>
+                    <GridViewColumn Header="Name" Width="80" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Category" Width="100" DisplayMemberBinding="{Binding Category}" />
+                    <GridViewColumn Header="Date" Width="100" DisplayMemberBinding="{Binding Date}" />
+                    <GridViewColumn Header="StarTime" Width="100" DisplayMemberBinding="{Binding StartTime}" />
+                    <GridViewColumn Header="EndDTime" Width="100" DisplayMemberBinding="{Binding EndTime}" />
                 </GridView>
             </ListView.View>
         </ListView>
