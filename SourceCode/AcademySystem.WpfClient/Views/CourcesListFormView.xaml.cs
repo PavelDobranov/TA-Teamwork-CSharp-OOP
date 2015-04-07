@@ -31,12 +31,12 @@ namespace AcademySystem.WpfClient.Views
             List<Training> TestCourcesList = new List<Training>();
             TestCourcesList.Add(new FreeCourse("Name1", "Cat1", DateTime.Now, DateTime.Now.AddDays(1), "desc"));
             TestCourcesList.Add(new FreeCourse("Name2", "Cat1133", DateTime.Now, DateTime.Now.AddDays(1), "desc"));
-            TestCourcesList.Add(new FreeCourse("Name3", "Cat23", DateTime.Now, DateTime.Now.AddDays(1), "descdescdescdescdesc"));
-            TestCourcesList.Add(new FreeCourse("Name4", "Cat123", DateTime.Now, DateTime.Now.AddDays(1), "descdescdescdescdescdescdescdescdescdesc"));
-            
-            #endregion
+            TestCourcesList.Add(new FreeCourse("Name3", "Cat23", DateTime.Now, DateTime.Now.AddDays(1), "desdescdesc"));
+            TestCourcesList.Add(new PaydCourse("Name4", "Cat111123", DateTime.Now, DateTime.Now.AddDays(1), "descdesc",200m));
 
             CourcesList.AddRange(TestCourcesList);
+            #endregion
+
             Cources.ItemsSource = CourcesList;
         }
     }

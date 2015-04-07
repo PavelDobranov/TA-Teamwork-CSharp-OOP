@@ -14,6 +14,7 @@
                     <GridViewColumn Header="StartDateTime" Width="Auto" DisplayMemberBinding="{Binding StartDateTime}" />
                     <GridViewColumn Header="EndDateTime" Width="Auto" DisplayMemberBinding="{Binding EndDateTime}" />
                     <GridViewColumn Header="Description" Width="Auto" DisplayMemberBinding="{Binding Description}" />
+                    <GridViewColumn Header="Price" Width="Auto" DisplayMemberBinding="{Binding Price}" />
                 </GridView>
             </ListView.View>
         </ListView>
