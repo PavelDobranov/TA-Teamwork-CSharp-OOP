@@ -57,6 +57,9 @@
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\UserLoginFormViewModel.cs" />
     <Compile Include="ViewModels\UserRegisterFormViewModel.cs" />
+    <Compile Include="Views\CourcesListFormView.xaml.cs">
+      <DependentUpon>CourcesListFormView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserLoginFormView.xaml.cs">
       <DependentUpon>UserLoginFormView.xaml</DependentUpon>
     </Compile>
@@ -71,6 +74,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\CourcesListFormView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\UserLoginFormView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
