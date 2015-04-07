@@ -57,6 +57,7 @@
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\CourseDetailsFormViewModel.cs" />
     <Compile Include="ViewModels\UserLoginFormViewModel.cs" />
+    <Compile Include="ViewModels\UserProfileFormViewModel.cs" />
     <Compile Include="ViewModels\UserRegisterFormViewModel.cs" />
     <Compile Include="Views\CourseDetailsFormView.xaml.cs">
       <DependentUpon>CourseDetailsFormView.xaml</DependentUpon>
@@ -66,6 +67,9 @@
     </Compile>
     <Compile Include="Views\UserLoginFormView.xaml.cs">
       <DependentUpon>UserLoginFormView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserProfileFormView.xaml.cs">
+      <DependentUpon>UserProfileFormView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\UserRegisterFormView.xaml.cs">
       <DependentUpon>UserRegisterFormView.xaml</DependentUpon>
@@ -89,6 +93,10 @@
     <Page Include="Views\UserLoginFormView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserProfileFormView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\UserRegisterFormView.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -127,6 +135,9 @@
       <Project>{04fc1d25-7e8b-4479-ba81-42df64ec7f29}</Project>
       <Name>AcademySystem</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\images.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
