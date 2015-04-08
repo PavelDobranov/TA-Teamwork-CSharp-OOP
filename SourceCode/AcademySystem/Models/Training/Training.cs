@@ -39,6 +39,7 @@
             this.EndDateTime = end;
         }
 
+        [DataMember(Name = "name")]
         public string Name
         {
             get
@@ -59,6 +60,7 @@
             }
         }
 
+        [DataMember(Name = "category")]
         public string Category
         {
             get
@@ -79,6 +81,7 @@
             }
         }
 
+        [DataMember(Name = "startDateTime")]
         public DateTime StartDateTime
         {
             get
@@ -91,6 +94,7 @@
             }
         }
 
+          [DataMember(Name = "endDateTime")]
         public DateTime EndDateTime
         {
             get

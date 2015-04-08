@@ -4,7 +4,9 @@
     using System.Collections.Generic;
 
     using AcademySystem.Models.Training.Contracts;
+    using System.Runtime.Serialization;
 
+    [DataContract]
     public class FreeCourse : Training, ITraining, ICourse
     {
         private const int MaxTrainingDuration = 500;
@@ -19,8 +21,10 @@
             this.trainingClasses = new List<TrainingClass>();
         }
 
+         [DataMember(Name = "description")]
         public string Description { get; private set; }
 
+         [DataMember(Name = "trainingClasses")]
         public ICollection<TrainingClass> TrainingClasses
         {
             get

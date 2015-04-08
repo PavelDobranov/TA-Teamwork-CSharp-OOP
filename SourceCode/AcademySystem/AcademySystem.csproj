@@ -64,7 +64,7 @@
     <Compile Include="Models\Training\Task.cs" />
     <Compile Include="Models\Training\Training.cs" />
     <Compile Include="Models\Training\TrainingClass.cs" />
-    <Compile Include="Models\Training\TrainingCourse.cs" />
+    <Compile Include="Models\Training\FreeCourse.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\Resources\" />

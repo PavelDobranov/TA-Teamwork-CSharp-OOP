@@ -5,7 +5,9 @@
     using System.Collections.Generic;
     using AcademySystem.Models.Humans.Contracts;
     using AcademySystem.Models.Training.Contracts;
+    using System.Runtime.Serialization;
 
+    [DataContract]
     public class Exercise : TrainingClass, IExercise
     {
         private ICollection<ITrainer> trainers;
@@ -18,8 +20,7 @@
             this.tasks = new List<Task>();
         }
 
-
-
+         [DataMember(Name = "trainers")]
         public ICollection<ITrainer> Trainers
         {
             get
@@ -35,6 +36,7 @@
             }
         }
 
+         [DataMember(Name = "tasks")]
         public ICollection<Task> Tasks
         {
             get
@@ -49,7 +51,6 @@
                 return deepCopy;
             }
         }
-
 
         public void AddTrainer(ITrainer trainer)
         {

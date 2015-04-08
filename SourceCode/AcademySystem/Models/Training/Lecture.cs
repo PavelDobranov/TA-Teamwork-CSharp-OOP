@@ -4,7 +4,9 @@
     using AcademySystem.Interfaces;
     using AcademySystem.Models.Humans.Contracts;
     using AcademySystem.Models.Training.Contracts;
+    using System.Runtime.Serialization;
 
+    [DataContract]
     public class Lecture : TrainingClass, ILecture
     {
         private ITrainer trainer;
@@ -17,6 +19,7 @@
             this.Homework = homework;
         }
 
+         [DataMember(Name = "trainer")]
         public ITrainer Trainer
         {
             get
@@ -36,6 +39,7 @@
             }
         }
 
+         [DataMember(Name = "homework")]
         public IHomework Homework
         {
             get
