@@ -3,7 +3,8 @@
     using System.Collections.Generic;
 
     using AcademySystem.Models.Humans.Contracts;
-
+    using System.Runtime.Serialization;
+    [DataContract]
     public class Trainer : Human, IHuman, ITrainer
     {
         ICollection<string> qualifications;
@@ -14,7 +15,7 @@
             this.qualifications = new List<string>();
             this.Webpage = webpage;
         }
-
+          [DataMember(Name = "qualifications")]
         public ICollection<string> Qualifications
         {
             get
@@ -23,6 +24,7 @@
             }
         }
 
+          [DataMember(Name = "webPage")]
         public string Webpage { get; set; }
 
         public void AddQualification(string qualification)

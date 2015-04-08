@@ -1,7 +1,8 @@
 ﻿namespace AcademySystem.Models.Humans.Contracts
 {
     using System;
-
+    using System.Runtime.Serialization;
+    [DataContract]
     public abstract class Human : IHuman
     {
         private static readonly int minAge = 0;
@@ -20,6 +21,7 @@
             this.Gender = gender;
         }
 
+        [DataMember(Name = "firstName")]
         public string FirstName
         {
             get
@@ -30,13 +32,14 @@
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentNullException(string.Format(ErrorMessage.NullOrEmptyPropertyMessage,"FirstName"));
+                    throw new ArgumentNullException(string.Format(ErrorMessage.NullOrEmptyPropertyMessage, "FirstName"));
                 }
 
                 this.firstName = value;
             }
         }
 
+        [DataMember(Name = "lasttName")]
         public string LastName
         {
             get
@@ -47,13 +50,14 @@
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentNullException(string.Format(ErrorMessage.NullOrEmptyPropertyMessage,"LastName"));
+                    throw new ArgumentNullException(string.Format(ErrorMessage.NullOrEmptyPropertyMessage, "LastName"));
                 }
 
                 this.lastName = value;
             }
         }
 
+        [DataMember(Name = "age")]
         public int Age
         {
             get
@@ -64,13 +68,14 @@
             {
                 if (this.age < minAge || this.age > maxAge)
                 {
-                    throw new ArgumentNullException(string.Format(ErrorMessage.OutOfRangeMessage,minAge, maxAge));
+                    throw new ArgumentNullException(string.Format(ErrorMessage.OutOfRangeMessage, minAge, maxAge));
                 }
 
                 this.age = value;
             }
         }
 
+        [DataMember(Name = "city")]
         public string City
         {
             get
@@ -81,13 +86,14 @@
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentNullException(string.Format(ErrorMessage.NullOrEmptyPropertyMessage,"City"));
+                    throw new ArgumentNullException(string.Format(ErrorMessage.NullOrEmptyPropertyMessage, "City"));
                 }
 
                 this.city = value;
             }
         }
 
+        [DataMember(Name = "gender")]
         public Gender Gender { get; set; }
     }
 }

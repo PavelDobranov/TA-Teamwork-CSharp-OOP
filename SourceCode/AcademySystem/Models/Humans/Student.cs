@@ -5,7 +5,8 @@
 
     using AcademySystem.Models.Humans.Contracts;
     using AcademySystem.Models.Training.Contracts;
-
+    using System.Runtime.Serialization;
+    [DataContract]
     public class Student : Human, IHuman, IStudent
     {
         private ICollection<ICourse> courses;
@@ -17,8 +18,10 @@
             this.courses = new List<ICourse>();
         }
 
+          [DataMember(Name = "facultyNumber")]
         public int FacultyNumber { get; private set; }
 
+          [DataMember(Name = "courses")]
         public ICollection<ICourse> Courses 
         {
             get 

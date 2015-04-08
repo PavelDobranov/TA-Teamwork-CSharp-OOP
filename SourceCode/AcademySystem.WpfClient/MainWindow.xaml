@@ -8,6 +8,6 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <!--<Views:CourseDetailsFormView />-->
-        <Views:UserProfileFormView />
+        <Views:AddTrainerFormView />
     </Grid>
 </Window>

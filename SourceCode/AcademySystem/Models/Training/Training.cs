@@ -3,7 +3,8 @@
     using System;
 
     using AcademySystem.Models.Training.Contracts;
-
+    using System.Runtime.Serialization;
+    [DataContract]
     public abstract class Training : ITraining
     {
         private string name;
