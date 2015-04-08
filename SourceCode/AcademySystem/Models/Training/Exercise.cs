@@ -1,7 +1,6 @@
 ﻿namespace AcademySystem.Models.Training
 {
     using System;
-    using AcademySystem.Interfaces;
     using System.Collections.Generic;
     using AcademySystem.Models.Humans.Contracts;
     using AcademySystem.Models.Training.Contracts;
@@ -20,7 +19,7 @@
             this.tasks = new List<Task>();
         }
 
-         [DataMember(Name = "trainers")]
+        [DataMember(Name = "trainers")]
         public ICollection<ITrainer> Trainers
         {
             get
@@ -36,7 +35,7 @@
             }
         }
 
-         [DataMember(Name = "tasks")]
+        [DataMember(Name = "tasks")]
         public ICollection<Task> Tasks
         {
             get

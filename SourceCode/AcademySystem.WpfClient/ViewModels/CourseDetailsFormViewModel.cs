@@ -7,9 +7,17 @@
     using AcademySystem.Models.Training;
     using AcademySystem.Models.Training.Contracts;
 
-    public class CourseDetailsFormViewModel : BaseVewModel
+    public class CourseDetailsFormViewModel : BaseVewModel, IPageViewModel
     {
         private ICommand subscribeCommand;
+
+        public string Name
+        {
+            get
+            {
+                return "Course Details";
+            }
+        }
 
         public ICommand Subscribe
         {

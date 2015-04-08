@@ -21,10 +21,10 @@
             this.trainingClasses = new List<TrainingClass>();
         }
 
-         [DataMember(Name = "description")]
+        [DataMember(Name = "description")]
         public string Description { get; private set; }
 
-         [DataMember(Name = "trainingClasses")]
+        [DataMember(Name = "trainingClasses")]
         public ICollection<TrainingClass> TrainingClasses
         {
             get

@@ -18,13 +18,13 @@
             this.courses = new List<ICourse>();
         }
 
-          [DataMember(Name = "facultyNumber")]
+        [DataMember(Name = "facultyNumber")]
         public int FacultyNumber { get; private set; }
 
-          [DataMember(Name = "courses")]
-        public ICollection<ICourse> Courses 
+        [DataMember(Name = "courses")]
+        public ICollection<ICourse> Courses
         {
-            get 
+            get
             {
                 // TODO: deep copy
                 return new List<ICourse>(this.courses);

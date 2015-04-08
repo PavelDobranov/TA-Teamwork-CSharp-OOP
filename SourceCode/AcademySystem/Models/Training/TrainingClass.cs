@@ -10,7 +10,6 @@ namespace AcademySystem.Models.Training
         public TrainingClass(string name, string category, DateTime start, DateTime end)
             : base(name, category, start, end, MaxTrainingHours)
         {
-
         }
     }
 }

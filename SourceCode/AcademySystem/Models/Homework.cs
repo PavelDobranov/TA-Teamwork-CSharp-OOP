@@ -3,26 +3,25 @@
     using System;
     using System.Collections.Generic;
 
-    using AcademySystem.Interfaces;
     using AcademySystem.Models.Training;
     using System.Runtime.Serialization;
 
     [DataContract]
-    public class Homework : IHomework
+    public class Homework
     {
         public Homework(DateTime deadline)
         {
             this.Deadline = deadline;
         }
 
-         [DataMember(Name = "deadline")]
+        [DataMember(Name = "deadline")]
         public DateTime Deadline
         {
             get;
             set;
         }
 
-         [DataMember(Name = "listOfTasks")]
+        [DataMember(Name = "listOfTasks")]
         public ICollection<Task> ListOfTasks
         {
             get;

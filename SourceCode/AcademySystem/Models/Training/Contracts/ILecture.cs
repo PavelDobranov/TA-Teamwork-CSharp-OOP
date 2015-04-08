@@ -1,13 +1,12 @@
 ﻿namespace AcademySystem.Models.Training.Contracts
 {
-    using AcademySystem.Interfaces;
     using AcademySystem.Models.Humans.Contracts;
     using System;
 
-    public interface ILecture
+    public interface ILecture : ITraining
     {
         ITrainer Trainer { get; }
 
-        IHomework Homework { get; }
+        Homework Homework { get; }
     }
 }

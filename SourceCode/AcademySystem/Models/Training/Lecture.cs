@@ -1,7 +1,6 @@
 ﻿namespace AcademySystem.Models.Training
 {
     using System;
-    using AcademySystem.Interfaces;
     using AcademySystem.Models.Humans.Contracts;
     using AcademySystem.Models.Training.Contracts;
     using System.Runtime.Serialization;
@@ -10,16 +9,16 @@
     public class Lecture : TrainingClass, ILecture
     {
         private ITrainer trainer;
-        private IHomework homework;
+        private Homework homework;
 
-        public Lecture(string name, string category, DateTime startTime, DateTime endTime, ITrainer trainer, IHomework homework)
+        public Lecture(string name, string category, DateTime startTime, DateTime endTime, ITrainer trainer, Homework homework)
             : base(name, category, startTime, endTime)
         {
             this.Trainer = trainer;
             this.Homework = homework;
         }
 
-         [DataMember(Name = "trainer")]
+        [DataMember(Name = "trainer")]
         public ITrainer Trainer
         {
             get
@@ -39,8 +38,8 @@
             }
         }
 
-         [DataMember(Name = "homework")]
-        public IHomework Homework
+        [DataMember(Name = "homework")]
+        public Homework Homework
         {
             get
             {

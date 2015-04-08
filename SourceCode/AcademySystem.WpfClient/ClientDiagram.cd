@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AcademySystem.WpfClient.Behavior.RelayCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAEAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavior\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.118" />
+  </Class>
+  <Class Name="AcademySystem.WpfClient.Data.DataPersister" Collapsed="true">
+    <Position X="4.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\DataPersister.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AcademySystem.WpfClient.Data.HttpRequester" Collapsed="true">
+    <Position X="6" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\HttpRequester.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AcademySystem.WpfClient.Models.UserModel" Collapsed="true">
+    <Position X="7.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAYAAAACAAAAAAAQAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Models\UserModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AcademySystem.WpfClient.ViewModels.AppViewModel">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAECAAQFIAIAAAAAAgAAAAAEAABEAAAA=</HashCode>
+      <FileName>ViewModels\AppViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AcademySystem.WpfClient.ViewModels.BaseVewModel" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\BaseViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AcademySystem.WpfClient.ViewModels.CourseDetailsFormViewModel">
+    <Position X="8.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAQAAAACAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\CourseDetailsFormViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AcademySystem.WpfClient.ViewModels.UserLoginFormViewModel">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAQAAAAAAAAAAAAQAAAAQAAAAAABACAIAUAAAAAAA=</HashCode>
+      <FileName>ViewModels\UserLoginFormVewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AcademySystem.WpfClient.ViewModels.UserProfileFormViewModel">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAQEAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\UserProfileFormViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AcademySystem.WpfClient.ViewModels.UserRegisterFormViewModel">
+    <Position X="4.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAiAAAAAAAQAAAAQAAIABAAACEAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\UserRegisterFormViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="AcademySystem.WpfClient.ViewModels.IPageViewModel" Collapsed="true">
+    <Position X="0.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\IPageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

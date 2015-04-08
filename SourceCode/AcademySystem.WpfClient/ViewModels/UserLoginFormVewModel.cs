@@ -15,7 +15,7 @@
         {
             get
             {
-                return "Login Form";
+                return "Login";
             }
         }
 

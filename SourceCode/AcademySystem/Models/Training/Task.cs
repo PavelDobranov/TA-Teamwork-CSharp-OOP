@@ -4,7 +4,7 @@ namespace AcademySystem.Models.Training
     [DataContract]
     public class Task
     {
-         [DataMember(Name = "condition")]
+        [DataMember(Name = "condition")]
         public string Condition { get; set; }
 
         [DataMember(Name = "input")]

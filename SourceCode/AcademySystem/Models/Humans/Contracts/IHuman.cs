@@ -9,7 +9,7 @@
         string LastName { get; }
 
         int Age { get; }
-        
+
         Gender Gender { get; }
     }
 }

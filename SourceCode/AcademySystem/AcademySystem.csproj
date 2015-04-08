@@ -44,11 +44,10 @@
     <Compile Include="CustomException\InvalidRangeException.cs" />
     <Compile Include="Models\Training\Contracts\IExercise.cs" />
     <Compile Include="Models\Training\Contracts\ILecture.cs" />
-    <Compile Include="Models\Training\Contracts\IPayd.cs" />
+    <Compile Include="Models\Training\Contracts\IPaydCourse.cs" />
     <Compile Include="Models\Training\Contracts\ITraining.cs" />
     <Compile Include="Models\Homework.cs" />
     <Compile Include="Models\Training\Contracts\ICourse.cs" />
-    <Compile Include="Interfaces\IHomework.cs" />
     <Compile Include="Models\Humans\Contracts\IHuman.cs" />
     <Compile Include="Models\Humans\Contracts\IStudent.cs" />
     <Compile Include="Models\Humans\Contracts\ITrainer.cs" />
@@ -57,7 +56,6 @@
     <Compile Include="Models\Humans\Student.cs" />
     <Compile Include="Models\Humans\Trainer.cs" />
     <Compile Include="Models\Mark.cs" />
-    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Training\Exercise.cs" />
     <Compile Include="Models\Training\Lecture.cs" />
@@ -67,11 +65,9 @@
     <Compile Include="Models\Training\TrainingClass.cs" />
     <Compile Include="Models\Training\FreeCourse.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Models\Resources\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="AcademySystemDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

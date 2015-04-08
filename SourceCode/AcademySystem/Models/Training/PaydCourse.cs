@@ -3,12 +3,11 @@ namespace AcademySystem.Models.Training
 {
     using System;
     using AcademySystem.Models;
-    using AcademySystem.Interfaces;
     using AcademySystem.Models.Training.Contracts;
     using System.Runtime.Serialization;
 
     [DataContract]
-    public class PaydCourse : FreeCourse , IPayd
+    public class PaydCourse : FreeCourse, ITraining, ICourse, IPaydCourse
     {
         private decimal price;
 
@@ -17,7 +16,8 @@ namespace AcademySystem.Models.Training
         {
             this.Price = price;
         }
-         [DataMember(Name = "price")]
+
+        [DataMember(Name = "price")]
         public decimal Price
         {
             get
@@ -37,7 +37,7 @@ namespace AcademySystem.Models.Training
             }
         }
 
-         [DataMember(Name = "certificate")]
-        public string Certificate { get; set; }   
+        [DataMember(Name = "certificate")]
+        public string Certificate { get; set; }
     }
 }

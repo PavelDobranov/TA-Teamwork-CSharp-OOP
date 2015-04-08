@@ -5,7 +5,7 @@ namespace AcademySystem.Models.Training.Contracts
     using System;
     using System.Collections.Generic;
 
-    public interface IExercise
+    public interface IExercise : ITraining
     {
         ICollection<ITrainer> Trainers { get; }
     }

@@ -9,13 +9,13 @@
     {
         ICollection<string> qualifications;
 
-        public Trainer(string firstName, string lastName, int age, string city, Gender gender,string webpage)
+        public Trainer(string firstName, string lastName, int age, string city, Gender gender, string webpage)
             : base(firstName, lastName, age, city, gender)
         {
             this.qualifications = new List<string>();
             this.Webpage = webpage;
         }
-          [DataMember(Name = "qualifications")]
+        [DataMember(Name = "qualifications")]
         public ICollection<string> Qualifications
         {
             get
@@ -24,7 +24,7 @@
             }
         }
 
-          [DataMember(Name = "webPage")]
+        [DataMember(Name = "webPage")]
         public string Webpage { get; set; }
 
         public void AddQualification(string qualification)

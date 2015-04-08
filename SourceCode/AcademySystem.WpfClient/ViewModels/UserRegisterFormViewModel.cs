@@ -8,9 +8,17 @@
     using AcademySystem.WpfClient.Data;
     using System.Windows.Controls;
 
-    public class UserRegisterFormViewModel : BaseVewModel
+    public class UserRegisterFormViewModel : BaseVewModel, IPageViewModel
     {
         private ICommand registerCommand;
+
+        public string Name
+        {
+            get
+            {
+                return "Register";
+            }
+        }
 
         public string Username { get; set; }
 
