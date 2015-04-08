@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\ErrorMessage.cs" />
+    <Compile Include="CustomException\InvalidRangeException.cs" />
     <Compile Include="Models\Training\Contracts\IExercise.cs" />
     <Compile Include="Models\Training\Contracts\ILecture.cs" />
     <Compile Include="Models\Training\Contracts\IPayd.cs" />

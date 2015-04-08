@@ -2,6 +2,8 @@
 {
     using System;
     using System.Runtime.Serialization;
+    using AcademySystem.CustomException;
+    
     [DataContract]
     public abstract class Human : IHuman
     {
@@ -66,11 +68,12 @@
             }
             private set
             {
-                if (this.age < minAge || this.age > maxAge)
-                {
-                    throw new ArgumentNullException(string.Format(ErrorMessage.OutOfRangeMessage, minAge, maxAge));
-                }
-
+               if (this.age < minAge || this.age > maxAge)
+               {
+                   //Custom exception
+                  throw new InvalidRangeException<int>(string.Format(ErrorMessage.InvalidRangeMessage,"Age",minAge,maxAge),minAge,maxAge);
+               }
+               
                 this.age = value;
             }
         }
