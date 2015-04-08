@@ -98,6 +98,7 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Training\TrainingClass.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Struct Name="AcademySystem.Models.Mark">
     <Position X="16" Y="4.75" Width="1.5" />

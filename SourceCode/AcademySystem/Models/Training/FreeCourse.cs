@@ -48,7 +48,7 @@
                     string.Format(
                         ErrorMessage.NullObjectMessage, trainingClass.GetType().Name));
             }
-            //TODO Deep copy
+
             this.trainingClasses.Add(trainingClass);
         }
 
@@ -60,7 +60,7 @@
                     string.Format(
                         ErrorMessage.NullObjectMessage, trainingClass.GetType().Name));
             }
-            //TODO Deep copy
+
             this.trainingClasses.Remove(trainingClass);
         }
     }

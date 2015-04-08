@@ -6,6 +6,7 @@
     using AcademySystem.Models.Humans.Contracts;
     using AcademySystem.Models.Training.Contracts;
     using System.Runtime.Serialization;
+
     [DataContract]
     public class Student : Human, IHuman, IStudent
     {
@@ -26,7 +27,6 @@
         {
             get
             {
-                // TODO: deep copy
                 return new List<ICourse>(this.courses);
             }
         }

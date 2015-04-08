@@ -1,9 +1,10 @@
-﻿
-namespace AcademySystem.Models.Training
+﻿namespace AcademySystem.Models.Training
 {
     using System;
 
-    public abstract class TrainingClass : Training
+    using AcademySystem.Models.Training.Contracts;
+
+    public abstract class TrainingClass : Training, ITraining
     {
         private const int MaxTrainingHours = 8;
 

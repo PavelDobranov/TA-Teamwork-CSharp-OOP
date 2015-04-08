@@ -61,43 +61,11 @@
             }
         }
 
-        //public ICommand Logout
-        //{
-        //    get
-        //    {
-        //        if (this.logoutCommand == null)
-        //        {
-        //            this.logoutCommand = new RelayCommand(this.HandleLogoutCommand);
-        //        }
-        //        return this.logoutCommand;
-        //    }
-        //}
-
-        //private void HandleLogoutCommand(object parameter)
-        //{
-        //    bool isUserLoggedOut = DataPersister.LogoutUser();
-        //    if (isUserLoggedOut)
-        //    {
-        //        this.Username = string.Empty;
-        //        this.LoggedInUser = false;
-        //        this.HandleChangeViewModelCommand(this.LoginRegisterVM);
-        //    }
-        //}
-
         private void HandleChangeViewModelCommand(object parameter)
         {
             var newCurrentViewModel = parameter as IPageViewModel;
             this.CurrentViewModel = newCurrentViewModel;
         }
-
-       
-
-        //public void LoginSuccessful(object sender, LoginSuccessArgs e)
-        //{
-        //    this.Username = e.Username;
-        //    this.LoggedInUser = true;
-        //    this.HandleChangeViewModelCommand(this.ViewModels[0]);
-        //}
 
         public string Username { get; set; }
     }

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AcademySystem.CustomException
+﻿namespace AcademySystem.CustomException
 {
+    using System;
+
     public class InvalidRangeException<T> : ApplicationException
     {
         private T min;

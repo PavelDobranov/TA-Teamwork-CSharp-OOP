@@ -59,7 +59,6 @@
                     string.Format(
                         ErrorMessage.NullObjectMessage, trainer.GetType().Name));
             }
-            //TODO Deep copy probably
             this.trainers.Add(trainer);
         }
 
@@ -71,7 +70,7 @@
                     string.Format(
                         ErrorMessage.NullObjectMessage, task.GetType().Name));
             }
-            //TODO Deep copy probably
+
             this.tasks.Add(task);
         }
     }

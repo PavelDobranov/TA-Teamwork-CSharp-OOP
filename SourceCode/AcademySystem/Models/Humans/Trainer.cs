@@ -4,6 +4,7 @@
 
     using AcademySystem.Models.Humans.Contracts;
     using System.Runtime.Serialization;
+
     [DataContract]
     public class Trainer : Human, IHuman, ITrainer
     {
@@ -15,6 +16,7 @@
             this.qualifications = new List<string>();
             this.Webpage = webpage;
         }
+
         [DataMember(Name = "qualifications")]
         public ICollection<string> Qualifications
         {
@@ -29,13 +31,11 @@
 
         public void AddQualification(string qualification)
         {
-            // TODO: validation
             this.qualifications.Add(qualification);
         }
 
         public void RemoveQualification(string qualification)
         {
-            // TODO: validation
             this.qualifications.Remove(qualification);
         }
     }

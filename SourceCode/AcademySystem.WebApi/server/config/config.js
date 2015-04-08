@@ -7,7 +7,7 @@ var rootPath = path.normalize(__dirname + '/../../');
 module.exports = {
   development: {
     port: 3030,
-    dbConnection: 'mongodb://admin:devacademysystem@ds029911.mongolab.com:29911/devacademysystem',
+    dbConnection: 'mongodb://admin:prodacademysystem@ds039231.mongolab.com:39231/prodacademysystem',
     rootPath: rootPath
   },
   production: {
