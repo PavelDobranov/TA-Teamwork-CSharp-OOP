@@ -1,13 +1,16 @@
 ﻿namespace AcademySystem.WpfClient.ViewModels
 {
+    using System.Windows;
+
     using System.Windows.Input;
 
     using AcademySystem.WpfClient.Behavior;
+    using AcademySystem.WpfClient.Data;
+    using System.Windows.Controls;
 
     public class UserRegisterFormViewModel : BaseVewModel
     {
         private ICommand registerCommand;
-        private string message;
 
         public string Username { get; set; }
 
@@ -16,20 +19,6 @@
         public string Password { get; set; }
 
         public string RePassword { get; set; }
-
-        // For testing purposes
-        public string Msg
-        {
-            get
-            {
-                return this.message;
-            }
-            set
-            {
-                this.message = value;
-                this.OnPropertyChanged("Msg");
-            }
-        }
 
         public ICommand Register
         {
@@ -43,10 +32,17 @@
                 return this.registerCommand;
             }
         }
-
+        
         private void HandleRegisterCommand(object parameter)
         {
-            this.Msg = string.Format("Username: {0},\nEmail: {1},\nPassowrd: {2}", this.Username, this.Email, this.Password);
+
+            var passwordBox = parameter as PasswordBox;
+            var password = passwordBox.Password;
+            //var authenticationCode = this.GetSHA1HashData(password);
+            //var rePasswordBox = parameter as PasswordBox;
+            //var password = passwordBox.Password;
+
+            DataPersister.RegisterUser("12312", "12312312", "12312312", "awdasdas", "asdasdasd");
         }
     }
 }

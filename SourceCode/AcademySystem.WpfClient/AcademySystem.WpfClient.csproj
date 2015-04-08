@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{744F8CE6-C7D8-49BA-BB18-3C46D4093882}</ProjectGuid>
+    <ProjectGuid>{FD61CA4B-61DB-4C06-A3C0-C99945795996}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AcademySystem.WpfClient</RootNamespace>
@@ -34,8 +34,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -54,19 +59,26 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Behavior\RelayCommand.cs" />
+    <Compile Include="Data\DataPersister.cs" />
+    <Compile Include="Data\HttpRequester.cs" />
+    <Compile Include="Helpers\LoginSuccessArgs.cs" />
+    <Compile Include="Models\LoginResponseModel.cs" />
+    <Compile Include="Models\UserModel.cs" />
+    <Compile Include="ViewModels\AppViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\CourseDetailsFormViewModel.cs" />
-    <Compile Include="ViewModels\UserLoginFormViewModel.cs" />
+    <Compile Include="ViewModels\IPageViewModel.cs" />
+    <Compile Include="ViewModels\UserLoginFormVewModel.cs" />
     <Compile Include="ViewModels\UserProfileFormViewModel.cs" />
     <Compile Include="ViewModels\UserRegisterFormViewModel.cs" />
     <Compile Include="Views\AddTrainerFormView.xaml.cs">
       <DependentUpon>AddTrainerFormView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\CourseDetailsFormView.xaml.cs">
-      <DependentUpon>CourseDetailsFormView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\CourcesListFormView.xaml.cs">
       <DependentUpon>CourcesListFormView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CourseDetailsFormView.xaml.cs">
+      <DependentUpon>CourseDetailsFormView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\UserLoginFormView.xaml.cs">
       <DependentUpon>UserLoginFormView.xaml</DependentUpon>
@@ -85,15 +97,19 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Page Include="Views\AddTrainerFormView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\CourseDetailsFormView.xaml">
+    <Page Include="Views\CourcesListFormView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\CourcesListFormView.xaml">
+    <Page Include="Views\CourseDetailsFormView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -102,12 +118,12 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserProfileFormView.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserRegisterFormView.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -128,6 +144,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -142,9 +159,6 @@
       <Project>{04fc1d25-7e8b-4479-ba81-42df64ec7f29}</Project>
       <Name>AcademySystem</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\images.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

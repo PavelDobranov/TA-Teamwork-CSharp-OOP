@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AcademySystem.WpfClient.Views
+namespace AcademySystem.WpfClient
 {
     /// <summary>
-    /// Interaction logic for CourcesListFormView.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class CourcesListFormView : UserControl
+    public partial class MainWindow : Window
     {
-        public CourcesListFormView()
+        public MainWindow()
         {
             InitializeComponent();
         }

@@ -6,15 +6,15 @@ namespace AcademySystem.WpfClient.ViewModels
     using AcademySystem.WpfClient.Behavior;
     using AcademySystem.Models;
     using System.Windows;
-    
+
     public class UserProfileFormViewModel : BaseVewModel
     {
         private ICommand addPictureComand;
         private User user = new User();
-        
+
         public User User { get; set; }
-       
-        
+
+
         public ICommand AddPicture
         {
             get

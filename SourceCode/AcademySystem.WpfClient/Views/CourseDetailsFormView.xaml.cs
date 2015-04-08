@@ -1,5 +1,4 @@
-﻿using AcademySystem.Models.Training;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,17 +23,6 @@ namespace AcademySystem.WpfClient.Views
         public CourseDetailsFormView()
         {
             InitializeComponent();
-
-            List<TrainingClass> TestCourcesList = new List<TrainingClass>();
-            TestCourcesList.Add(new Exercise("Name1", "Cat1", DateTime.Now, DateTime.Now.AddHours(4)));
-            TestCourcesList.Add(new Exercise("Name2", "Cat2", DateTime.Now, DateTime.Now.AddHours(4)));
-            TestCourcesList.Add(new Exercise("Name3", "Cat3", DateTime.Now, DateTime.Now.AddHours(4)));
-            TestCourcesList.Add(new Exercise("Name4", "Cat4", DateTime.Now, DateTime.Now.AddHours(4)));
-
-
-            TestCourcesList.AddRange(TestCourcesList);
-            TrainingClasses.ItemsSource = TestCourcesList;
-                       
         }
     }
 }
